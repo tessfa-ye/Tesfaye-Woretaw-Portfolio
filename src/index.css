@@ -8,7 +8,7 @@ html, body {
   color: #f3f4f6; /* light text */
 }
 @layer utilities {
-  @keyframe blink {
+  @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
