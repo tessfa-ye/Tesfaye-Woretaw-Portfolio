@@ -27,14 +27,20 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen  flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="w-150  px-4">
+        <div className="px-5 max-w-2xl mx-auto w-full">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get in Touch
           </h2>
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <h4 className="text-gray-400 text-center max-w-2xl mx-auto mb-10">
+            I'm always interested in collaborating on innovative web and mobile
+            projects, exploring new technologies, and bringing creative ideas to
+            life. Feel free to reach out if you’d like to discuss an
+            opportunity, share feedback, or just say hello!
+          </h4>
+          <form className="space-y-6 " onSubmit={handleSubmit}>
             <div className="relative">
               <label
                 htmlFor="name"
@@ -103,6 +109,54 @@ export const Contact = () => {
               Send Message
             </button>
           </form>
+
+          {/* Contact Information Section */}
+          <div className="mt-12 text-center text-gray-300 space-y-4">
+            <h3 className="text-xl font-semibold text-white">
+              Contact Information
+            </h3>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-4 text-sm">
+              <div className="flex items-center gap-2">
+                <i className="fas fa-map-marker-alt text-blue-400"></i>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <i className="fas fa-envelope text-blue-400"></i>
+                <a
+                  href="mailto:tessfayye@gmail.com"
+                  className="hover:text-blue-400 transition"
+                >
+                  tessfayye@gmail.com
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <i className="fab fa-linkedin text-blue-400"></i>
+                <a
+                  href="https://www.linkedin.com/in/tesfaye-woretaw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition"
+                >
+                  LinkedIn
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <i className="fab fa-github text-blue-400"></i>
+                <a
+                  href="https://github.com/tessfa-ye"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </RevealOnScroll>
     </section>
