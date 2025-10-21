@@ -12,10 +12,10 @@ export const Contact = () => {
     e.preventDefault(); // WHEN SUBMIT CLICKED TO PREVENT REFRESH
     emailjs
       .sendForm(
-        import.meta.env.SERVICE_ID,
-        import.meta.env.TEMPLATE_ID,
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         e.target,
-        import.meta.env.PUBLIC_KEY
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
         alert("Message sent successfully!");
@@ -135,7 +135,7 @@ export const Contact = () => {
               <div className="flex items-center gap-2">
                 <i className="fab fa-linkedin text-blue-400"></i>
                 <a
-                  href="https://www.linkedin.com/in/tesfaye-woretaw"
+                  href="https://www.linkedin.com/in/tesfaye-woretaw-89335a276"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition"
